@@ -1,0 +1,47 @@
+<!--<div class="welcome-bar">-->
+
+<div class="welcome-bar" style="width:60px; color:black !important">
+  <div class="bar-inner">
+    <div class="row no-gutter">
+  <div class="col-md-12 top-nav" #elem onclick="crossTry()">
+    <div class="cross-try" id="topct">-</div>
+      <div class="cross-try" id="midct">-</div>
+        <div class="cross-try" id="lowct">-</div>
+  </div>
+  <div class="col-md-12 mid-nav">
+      <nav class="welcome-nav">
+        <ul>
+          <li *ngFor="let tab of navTabs; let i = index">
+            <span class="glyphicon glyphicon-{{glyphs[i]}} tab-{{i+1}}"></span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+      <div class="col-md-12 low-nav">
+        <ul>
+          <li *ngFor="let sm of social; let i = index">
+            <span>
+            <img src="./app/images/logos/{{sm}}.png" class="sm-logo"/>
+          </span>
+          </li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<div class="open-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 close-it">
+        <div class="close-bar" id="closeBar">
+          <span class="glyphicon glyphicon-remove" style="cursor:pointer" onclick="crossTry()"></span>
+        </div>
+        <ul class="open-ul">
+          <li *ngFor="let tab of navTabs; let i = index">
+            <a href="#"><span class="glyphicon glyphicon-{{glyphs[i]}}"></span><div>{{tab}}</div></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

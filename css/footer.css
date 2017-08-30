@@ -1,0 +1,16 @@
+.footer{
+  min-height: 150px;
+  background-color: #dedede;
+  color: black;
+  border-top: 1px solid #74b0ff;
+  position: relative;
+  bottom: 0;
+  min-width: 100vw;
+  padding: 20px;
+  text-align: center;
+}
+.footer ul{
+  list-style: none;
+  padding: 0;
+  text-transform: capitalize;
+}

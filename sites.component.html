@@ -1,0 +1,30 @@
+<div class="col-md-12" id="siteSection">
+  <div class="row no-gutter talent-boxes">
+    <div class="container-fluid title-header" id="skills">
+      <div class="container">
+        <div class="col-md-4" *ngFor="let t of traits; let i = index">
+          <div [ngClass]="i<3 ? 'thumbs' : 'no-se-svc'">
+            <img src="./app/images/logos/{{t.img}}.png" class="trait-logo"/>
+            <p class="talent-des">{{t.name}}</p>
+            <hr class="site-hr"/>
+            <p class="talent-des">{{t.des}}</p>
+          </div>
+        </div>
+      </div>
+      <input type="button" href="#skills" id="seeServices" class="btn btn-hire btn-primary" value="See All Services" onclick="moreServices(this.value)"/>
+    </div>
+    <div class="container" id="talents">
+    <div class="col-md-3" *ngFor="let talent of talents; let i = index">
+      <div [ngClass]="i<4 ? 'thumbs' : 'no-se'">
+        <div class="icon">
+          <img src="./app/images/logos/{{talent.name}}.png" class="talent-logo"/>
+        </div>
+        <p class="talent-des">{{talent.name}}</p>
+        <hr class="site-hr"/>
+        <p id="{{talent.name}}" class="talent-des">{{talent.des}}</p>
+      </div>
+    </div>
+    <input type="button" href="#talents" id="viewMore" class="btn btn-hire btn-primary" value="View More" onclick="moreSkills(this.value)"/>
+  </div>
+  </div>
+</div>

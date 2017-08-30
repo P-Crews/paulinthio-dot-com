@@ -1,0 +1,39 @@
+.wel-gre{
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  background: rgba(255,255,255,0.8);
+  min-height: 75vh;
+  height: 90vh;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+.wel-gre h1{
+  font-family: 'Architects Daughter', cursive;
+
+}
+.greeting{
+  font-size: 70px;
+  font-family: 'Architects Daughter', cursive;
+  color: #0069d9;
+}
+.hello{
+  font-size: 20px;
+  font-weight: 600;
+}
+.hello b{
+  font-size: 80px;
+}
+.hello i{
+  font-size: 30px;
+  font-weight: bold;
+  color: darkblue;
+}
+.btn-hire{
+  height: auto;
+  width: auto;
+  padding: 5px;
+  color: white;
+  font-size: 40px;
+}

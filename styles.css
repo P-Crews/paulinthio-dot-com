@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Eras Light ITC';
+  src: url('/ctm/ft/ERASLGHT.TTF');
+}
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+body{
+  background-color: rgba(0,0,10,0.8) !important;
+  color: white !important;
+  min-height: 100vh !important;
+  font-size: 20px;
+  overflow-x: hidden;
+  font-family: 'Poiret One',cursive !important;
+}
+.row.no-gutter{
+  margin-left: 0;
+  margin-right: 0;
+
+}
+ [col^="col-"], [class*=" col-"]{
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-gutter, .no-gutter img, .no-gutter div{
+  padding:0;
+}
+.container-fluid{
+  padding: 0px !important;
+}
+.template{
+  min-width: 100vw;
+  margin-left: 60px;
+}
+.pages{
+  display: block;
+  position: relative;
+  margin-top: 25vh;
+  width: -webkit-fill-available;
+}
+.page{
+  display: inline-flex;
+  min-height:100vh;
+  position: absolute;
+  top: 0;
+  min-width: 100vw;
+  z-index: 2;
+  background: url("./app/images/bk/web(iv)2.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.nav-bar{
+  max-width: 3.33% !important;
+  display: block;
+}
+welcome{
+  position: relative;
+  top: 40%;
+}

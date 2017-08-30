@@ -1,0 +1,41 @@
+<div class="col-md-12">
+  <div class="container-fluid">
+    <div class=" container footer">
+      <div class="col-md-3">
+        <h3>Navigation</h3>
+        <ul class="">
+          <li *ngFor="let col of footLinks; let i = index">
+            {{col}}
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3>Contact</h3>
+        <ul class="">
+          <li *ngFor="let ct of footContact; let i = index">
+            {{ct}}
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3>Services</h3>
+        <ul class="">
+          <li *ngFor="let svc of services; let i = index">
+            {{svc}}
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3>Credits</h3>
+        <ul class="">
+          <li *ngFor="let cdt of credits; let i = index">
+            {{cdt}}
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-12" style="padding:0;margin:0;position:relative;bottom:0!important">
+        <p><small>&copy; {{date | date:'yyyy'}} Paulinthio. Site designed, developed &amp; maintained by P. Crews. <a href="#">Contact developer</a></small></p>
+        </div>
+    </div>
+  </div>
+</div>
